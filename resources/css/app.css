@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-container {
+    background-image: url('/public/assets/loginimg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height of the container to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        background-size: contain; /* Change background size for smaller screens */
+    }
+}
