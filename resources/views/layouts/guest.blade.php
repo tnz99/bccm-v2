@@ -13,25 +13,13 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
-    <body class="font-sans text-gray-900 antialiased">
-        
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100" style="background-image: url('/assets/img/loginimg.png'); background-position: center;">
-            
-            <div>
-                <p class="font-extrabold text-4xl md:text-6xl text-left">Donate to a Clear and Greener Bhutan</p>
-
-
-            
-                <!-- <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a> -->
-            </div>
-
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-        
+    <body class="login-container h-full" style="background-image: url('/assets/img/bg-login.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <x-main-nav></x-main-nav>
+        <div class="p-2 sm:ml-32 sm:p-4">
+            <div class="flex flex-col w-full sm:w-1/3">
                 {{ $slot }}
             </div>
         </div>

@@ -9,6 +9,7 @@ services:
       - ./:/var/www/html
     ports:
       - "8000:8000" # Expose port 8000 of the container to port 8000 of the host
+      - "8001:8001"
 
   db:
     image: mysql:latest
