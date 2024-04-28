@@ -16,7 +16,7 @@
 
     `docker-compose up --build`
 
-    get into the docker container and run "composer update"
+    next, get into the docker container and run `composer install`
 
 - else run 
 

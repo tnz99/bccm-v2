@@ -20,6 +20,7 @@ RUN apt-get -y install npm
 RUN apt-get install -y default-mysql-client \
     && rm -rf /var/lib/apt/lists/*
 
+RUN npm install -y vite
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
@@ -36,7 +37,11 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 RUN sed -i 's/80/8000/g' /etc/apache2/ports.conf /etc/apache2/sites-available/*.conf
 
 # Expose port 8000 to the outside world
+
+RUN composer install
+
 EXPOSE 8000
+EXPOSE 8001
 
 # Start Apache server
 CMD ["apache2-foreground"]
