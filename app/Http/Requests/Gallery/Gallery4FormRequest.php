@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Gallery;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use Illuminate\Support\Facades\Validator;
 class Gallery4FormRequest extends FormRequest
 {
     /**
@@ -24,7 +24,8 @@ class Gallery4FormRequest extends FormRequest
         return [
             'gallery4_title' => [
                 'required',
-                'string'
+                'string',
+                'max_words:5'
             ],
 
 
@@ -37,4 +38,23 @@ class Gallery4FormRequest extends FormRequest
             ],
         ];
     }
+    public function withValidator($validator)
+    {
+        $validator->addExtension('max_words', function ($attribute, $value, $parameters, $validator) {
+            $words = str_word_count($value);
+            return $words <= $parameters[0];
+        });
+
+        $validator->addReplacer('max_words', function ($message, $attribute, $rule, $parameters) {
+            return str_replace(':max_words', $parameters[0], $message);
+        });
+    }
+
+    public function messages()
+    {
+        return [
+            'gallery4_title.max_words' => 'The :attribute may not have more than :max_words words.',
+        ];
+    }
 }
+

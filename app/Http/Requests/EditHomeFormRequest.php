@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use Illuminate\Support\Facades\Validator;
 class EditHomeFormRequest extends FormRequest
 {
     /**
@@ -24,11 +24,13 @@ class EditHomeFormRequest extends FormRequest
         return [
             'home_title' => [
                 'required',
-                'string'
+                'string',
+                'max_words:5'
             ],
             'home_subtitle' => [
                 'required',
-                'string'
+                'string',
+                'max_words:10'
             ],
             'home_image' => [
                 'nullable',
@@ -37,4 +39,24 @@ class EditHomeFormRequest extends FormRequest
 
         ];
     }
+    public function withValidator($validator)
+    {
+        $validator->addExtension('max_words', function ($attribute, $value, $parameters, $validator) {
+            $words = str_word_count($value);
+            return $words <= $parameters[0];
+        });
+
+        $validator->addReplacer('max_words', function ($message, $attribute, $rule, $parameters) {
+            return str_replace(':max_words', $parameters[0], $message);
+        });
+    }
+
+    public function messages()
+    {
+        return [
+            'home_title.max_words' => 'The :attribute may not have more than :max_words words.',
+            'home_subtitle.max_words' => 'The :attribute may not have more than :max_words words.',
+        ];
+    }
 }
+

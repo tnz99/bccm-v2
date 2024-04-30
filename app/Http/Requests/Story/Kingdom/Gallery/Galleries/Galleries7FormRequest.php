@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Story\Kingdom\Gallery\Galleries;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use Illuminate\Support\Facades\Validator;
 class Galleries7FormRequest extends FormRequest
 {
     /**
@@ -24,11 +24,13 @@ class Galleries7FormRequest extends FormRequest
         return [
             'kingdom_galleries6_title' => [
                 'required',
-                'string'
+                'string',
+                'max_words:5'
             ],
             'kingdom_galleries6_subtitle' => [
                 'required',
-                'string'
+                'string',
+                'max_words:10'
             ],
             'kingdom_galleries6_description' => [
                 'required',
@@ -39,4 +41,24 @@ class Galleries7FormRequest extends FormRequest
             ],
         ];
     }
+    public function withValidator($validator)
+    {
+        $validator->addExtension('max_words', function ($attribute, $value, $parameters, $validator) {
+            $words = str_word_count($value);
+            return $words <= $parameters[0];
+        });
+
+        $validator->addReplacer('max_words', function ($message, $attribute, $rule, $parameters) {
+            return str_replace(':max_words', $parameters[0], $message);
+        });
+    }
+
+    public function messages()
+    {
+        return [
+            'kingdom_galleries6_title.max_words' => 'The :attribute may not have more than :max_words words.',
+            'kingdom_galleries6_subtitle.max_words' => 'The :attribute may not have more than :max_words words.',
+        ];
+    }
 }
+

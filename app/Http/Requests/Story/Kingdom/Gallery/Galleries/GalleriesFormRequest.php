@@ -3,7 +3,6 @@
 namespace App\Http\Requests\Story\Kingdom\Gallery\Galleries;
 
 use Illuminate\Foundation\Http\FormRequest;
-
 class GalleriesFormRequest extends FormRequest
 {
     /**
@@ -24,11 +23,13 @@ class GalleriesFormRequest extends FormRequest
         return [
             'kingdom_galleries0_title' => [
                 'required',
-                'string'
+                'string',
+                'max_words:5'
             ],
             'kingdom_galleries0_subtitle' => [
                 'required',
-                'string'
+                'string',
+                'max_words:10'
             ],
             'kingdom_galleries0_description' => [
                 'required',

@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Story\Flora\Page3;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use Illuminate\Support\Facades\Validator;
 class Gallery10FormRequest extends FormRequest
 {
     /**
@@ -24,11 +24,13 @@ class Gallery10FormRequest extends FormRequest
         return [
             'flora_page3_gallery10_title' => [
                 'required',
-                'string'
+                'string',
+                'max_words:5'
             ],
             'flora_page3_gallery10_subtitle' => [
                 'required',
-                'string'
+                'string',
+                'max_words:10'
             ],
             'flora_page3_gallery10_description' => [
                 'required',
@@ -37,6 +39,26 @@ class Gallery10FormRequest extends FormRequest
                 'nullable',
                 'mimes:png,jpg,jpeg'
             ],
+        ];
+    }
+
+    public function withValidator($validator)
+    {
+        $validator->addExtension('max_words', function ($attribute, $value, $parameters, $validator) {
+            $words = str_word_count($value);
+            return $words <= $parameters[0];
+        });
+
+        $validator->addReplacer('max_words', function ($message, $attribute, $rule, $parameters) {
+            return str_replace(':max_words', $parameters[0], $message);
+        });
+    }
+
+    public function messages()
+    {
+        return [
+            'flora_page3_gallery10_title.max_words' => 'The :attribute may not have more than :max_words words.',
+            'flora_page3_gallery10_subtitle.max_words' => 'The :attribute may not have more than :max_words words.',
         ];
     }
 }
