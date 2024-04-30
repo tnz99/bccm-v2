@@ -44,4 +44,16 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    static public function getSingle($id)
+    {
+        return self::find($id);
+    }
+
+    static public function getRecord()
+    {
+        return User::select('users.*', 'role.name as role_name')
+            ->join('role', 'role.id', '=', 'users.role_id')
+            ->orderBy('users.id', 'desc')->get();
+    }
 }
