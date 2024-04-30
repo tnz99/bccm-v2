@@ -1,0 +1,26 @@
+/* Add this to your CSS file */
+
+.sun-container {
+  position: relative;
+  width: 100px; /* Adjust the size of the sun */
+  height: 100px; /* Adjust the size of the sun */
+  margin: 50px auto; /* Adjust the position of the sun */
+}
+
+.sun {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffd700; /* Sun color */
+  border-radius: 50%;
+  animation: rotateSun 5s linear infinite; /* Adjust the animation duration */
+}
+
+@keyframes rotateSun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

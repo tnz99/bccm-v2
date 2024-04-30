@@ -1,0 +1,64 @@
+/* Hide the default audio controls */
+li.mt-n10 audio {
+    display: none;
+}
+
+/* Style the custom audio container */
+.custom-audio {
+    position: relative;
+    width: 60px;
+    height: 40px;
+}
+
+/* Style the custom play button */
+#play-pause-button {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-size: cover; /* Make sure the image covers the button */
+}
+
+/* Style the play button with image */
+#play-pause-button:before {
+    content: "";
+    background: url('../images/backgrounds/soundOn.png') no-repeat center center;
+    background-size: cover; /* or contain, depending on your preference */
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+/* Style the pause button with image */
+#play-pause-button.paused:before {
+    content: "";
+    background: url('../images/backgrounds/soundOFF.png') no-repeat center center;
+    background-size: cover; /* or contain, depending on your preference */
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+/* Style the pause button when it's in the "playing" state */
+#play-pause-button.playing:before {
+    content: "";
+    background: url('../images/backgrounds/soundOFF.png') no-repeat center center;
+    background-size: cover; /* or contain, depending on your preference */
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+/* Style the play button when it's in the "paused" state */
+/* #play-pause-button.paused:before {
+    content: "\25B6"; 
+} */
+
+/* Style the pause button when it's in the "playing" state */
+/* #play-pause-button.playing:before {
+    content: "\23F8";
+    
+} */
+
