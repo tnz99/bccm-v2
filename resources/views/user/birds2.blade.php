@@ -10,7 +10,7 @@
 <section class="story-section gallery-wrapper">
     <div class="gallery-container">
         <div class="options">
-            <div class="option active" style="background: white">
+            <div class="option active" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery1) bg-active @endif" style="@if($fauna_page5_gallery1) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery1/' . $fauna_page5_gallery1->fauna_page5_gallery1_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery2) bg-active @endif" style="@if($fauna_page5_gallery2) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery2/' . $fauna_page5_gallery2->fauna_page5_gallery2_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery3) bg-active @endif" style="@if($fauna_page5_gallery3) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery3/' . $fauna_page5_gallery3->fauna_page5_gallery3_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -54,7 +54,7 @@
 
 
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery4) bg-active @endif" style="@if($fauna_page5_gallery4) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery4/' . $fauna_page5_gallery4->fauna_page5_gallery4_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery5) bg-active @endif" style="@if($fauna_page5_gallery5) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery5/' . $fauna_page5_gallery5->fauna_page5_gallery5_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery6) bg-active @endif" style="@if($fauna_page5_gallery6) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery6/' . $fauna_page5_gallery6->fauna_page5_gallery6_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery7) bg-active @endif" style="@if($fauna_page5_gallery7) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery7/' . $fauna_page5_gallery7->fauna_page5_gallery7_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery8) bg-active @endif" style="@if($fauna_page5_gallery8) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery8/' . $fauna_page5_gallery8->fauna_page5_gallery8_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -125,7 +125,7 @@
             </div>
 
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery9) bg-active @endif" style="@if($fauna_page5_gallery9) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery9/' . $fauna_page5_gallery9->fauna_page5_gallery9_image) }}'); @endif">
                     <div class="label">
                         <div class="info">
@@ -140,7 +140,7 @@
             </div>
 
 
-            <div class="option" style="background: white">
+            <div class="option" style="background: #555536">
                 <div class="image @if($fauna_page5_gallery10) bg-active @endif" style="@if($fauna_page5_gallery10) background-image: url('{{ asset('uploads/story/fauna/fauna_page5/gallery10/' . $fauna_page5_gallery10->fauna_page5_gallery10_image) }}'); @endif">
                     <div class="label">
                         <div class="info">

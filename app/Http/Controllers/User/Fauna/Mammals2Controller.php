@@ -4,7 +4,7 @@ namespace App\Http\Controllers\User\Fauna;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Story\Flora\Page2\Gallery;
+use App\Models\Story\Fauna\Page2\Gallery;
 use App\Models\Story\Fauna\Page3\Gallery1;
 use App\Models\Story\Fauna\Page3\Gallery2;
 use App\Models\Story\Fauna\Page3\Gallery3;
