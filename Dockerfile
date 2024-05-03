@@ -36,8 +36,7 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 # Change Apache's default port to 8000
 RUN sed -i 's/80/8000/g' /etc/apache2/ports.conf /etc/apache2/sites-available/*.conf
 
-# Expose port 8000 to the outside world
-
+# Expose port 8000 to the outside world.
 RUN composer install
 
 EXPOSE 8000
