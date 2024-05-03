@@ -27,6 +27,18 @@
             <li class="text-uppercase"><a class="no-underline {{ $dark ? 'text-white' : 'text-black' }} nav-list-link" href="/the-newsE">news & events</a></li>
             <li class="text-uppercase"><a class="no-underline {{ $dark ? 'text-white' : 'text-black' }} nav-list-link" href="/donate">Donate</a></li>
             <li class="text-uppercase"><a class="no-underline {{ $dark ? 'text-white' : 'text-black' }} nav-list-link" href="/contact">contact</a></li>
+            <li class="text-uppercase">
+                <div class="dropdown">
+                    <button class="dropdown-toggle text-uppercase nav-list-link" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      EN
+                      <img src="/images/backgrounds/uk.png" alt="flag" style="width: 20px; height: 20px">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">English (EN)</a></li>
+                      <li><a class="dropdown-item" href="#">Dzongkha (DZ)</a></li>
+                      </ul>
+                  </div>
+            </li>
 
             <button id="close-nav" type="button" class="close menu-icon close-nav-icon" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>Title</label>
-                            <input type="text" name="home_title" class="form-control"/>
+                            <textarea type="text" name="home_title" class="form-control"></textarea>
                             @error('home_title') <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>

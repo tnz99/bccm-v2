@@ -79,23 +79,23 @@
                     <td style="display: flex; align-items: center;">
                         @if($key < 9)
                             @if($key == 0)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery1/galleries0') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery1/galleries0', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 1)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery2/galleries1') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery2/galleries1', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 2)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery3/galleries2') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery3/galleries2', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 3)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery4/galleries3') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery4/galleries3', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 4)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery5/galleries4') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery5/galleries4', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 5)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery6/galleries5') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery6/galleries5', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 6)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery7/galleries6') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery7/galleries6', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 7)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery8/galleries7') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery8/galleries7', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @elseif($key == 8)
-                                <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery9/galleries8') }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
+                            <a href="{{ url('admin/story/kingdom/gallery/galleries/gallery9/galleries8', ['kingdom_gallery_id' => $kingdomGalleryItem->kingdom_gallery_id]) }}" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>
                             @endif
                         @else
                             <a href="" class="btn btn-sm btn-success" style="background-color: #194B46; color: white">Edit</a>

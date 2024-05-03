@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kingdom_gallery4', function (Blueprint $table) {
-            $table->id('kingdom_galleries3_id');
-            $table->string('kingdom_galleries3_title');
-            $table->string('kingdom_galleries3_subtitle');
-            $table->longText('kingdom_galleries3_description');
-            $table->string('kingdom_galleries3_image')->nullable();
+        Schema::create('kingdom_gallery6', function (Blueprint $table) {
+
+            $table->id('kingdom_galleries5_id');
+            $table->string('kingdom_galleries5_title');
+            $table->string('kingdom_galleries5_subtitle');
+            $table->longText('kingdom_galleries5_description');
+            $table->string('kingdom_galleries5_image')->nullable();
             $table->timestamps();
         });
     }

@@ -50,9 +50,16 @@ class KingdomGalleryController extends Controller
 
     public function destroy($kingdom_gallery_id)
     {
-        $kingdom_gallery = KingdomGallery::findOrFail($kingdom_gallery_id);
-        $kingdom_gallery->delete();
-        return redirect('admin/story/kingdom/gallery/gallery')->with('status', 'Your Data is Deleted');
+        // Trigger the event before deleting the main gallery
 
+        $kingdom_gallery = KingdomGallery::findOrFail($kingdom_gallery_id);
+
+
+        // Delete the main gallery
+        $kingdom_gallery->delete();
+
+        return redirect('admin/story/kingdom/gallery/gallery')->with('status', 'Your Data is Deleted');
     }
+
+
 }

@@ -11,146 +11,146 @@
     <div class="gallery-container">
         <div class="options">
             <div class="option active" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery1) bg-active @endif" style="@if($fauna_page7_gallery1) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery1/' . $fauna_page7_gallery1->fauna_page7_gallery1_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery1) bg-active @endif" style="@if($fauna_page7_gallery1) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery1/' . $fauna_page7_gallery1->fauna_page7_gallery1_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery1->fauna_page7_gallery1_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery1->fauna_page7_gallery1_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery1->fauna_page7_gallery1_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery1->fauna_page7_gallery1_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery1->fauna_page7_gallery1_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery1->fauna_page7_gallery1_description ?? '')) !!}</div>
                 </div>
             </div>
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery2) bg-active @endif" style="@if($fauna_page7_gallery2) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery2/' . $fauna_page7_gallery2->fauna_page7_gallery2_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery2) bg-active @endif" style="@if($fauna_page7_gallery2) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery2/' . $fauna_page7_gallery2->fauna_page7_gallery2_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery2->fauna_page7_gallery2_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery2->fauna_page7_gallery2_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery2->fauna_page7_gallery2_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery2->fauna_page7_gallery2_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery2->fauna_page7_gallery2_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery2->fauna_page7_gallery2_description ?? '')) !!}</div>
                 </div>
             </div>
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery3) bg-active @endif" style="@if($fauna_page7_gallery3) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery3/' . $fauna_page7_gallery3->fauna_page7_gallery3_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery3) bg-active @endif" style="@if($fauna_page7_gallery3) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery3/' . $fauna_page7_gallery3->fauna_page7_gallery3_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery3->fauna_page7_gallery3_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery3->fauna_page7_gallery3_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery3->fauna_page7_gallery3_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery3->fauna_page7_gallery3_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery3->fauna_page7_gallery3_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery3->fauna_page7_gallery3_description ?? '')) !!}</div>
                 </div>
             </div>
 
 
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery4) bg-active @endif" style="@if($fauna_page7_gallery4) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery4/' . $fauna_page7_gallery4->fauna_page7_gallery4_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery4) bg-active @endif" style="@if($fauna_page7_gallery4) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery4/' . $fauna_page7_gallery4->fauna_page7_gallery4_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery4->fauna_page7_gallery4_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery4->fauna_page7_gallery4_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery4->fauna_page7_gallery4_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery4->fauna_page7_gallery4_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery4->fauna_page7_gallery4_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery4->fauna_page7_gallery4_description ?? '')) !!}</div>
                 </div>
             </div>
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery5) bg-active @endif" style="@if($fauna_page7_gallery5) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery5/' . $fauna_page7_gallery5->fauna_page7_gallery5_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery5) bg-active @endif" style="@if($fauna_page7_gallery5) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery5/' . $fauna_page7_gallery5->fauna_page7_gallery5_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery5->fauna_page7_gallery5_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery5->fauna_page7_gallery5_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery5->fauna_page7_gallery5_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery5->fauna_page7_gallery5_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery5->fauna_page7_gallery5_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery5->fauna_page7_gallery5_description ?? '')) !!}</div>
                 </div>
             </div>
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery6) bg-active @endif" style="@if($fauna_page7_gallery6) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery6/' . $fauna_page7_gallery6->fauna_page7_gallery6_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery6) bg-active @endif" style="@if($fauna_page7_gallery6) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery6/' . $fauna_page7_gallery6->fauna_page7_gallery6_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery6->fauna_page7_gallery6_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery6->fauna_page7_gallery6_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery6->fauna_page7_gallery6_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery6->fauna_page7_gallery6_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery6->fauna_page7_gallery6_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery6->fauna_page7_gallery6_description ?? '')) !!}</div>
                 </div>
             </div>
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery7) bg-active @endif" style="@if($fauna_page7_gallery7) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery7/' . $fauna_page7_gallery7->fauna_page7_gallery7_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery7) bg-active @endif" style="@if($fauna_page7_gallery7) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery7/' . $fauna_page7_gallery7->fauna_page7_gallery7_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery7->fauna_page7_gallery7_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery7->fauna_page7_gallery7_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery7->fauna_page7_gallery7_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery7->fauna_page7_gallery7_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery7->fauna_page7_gallery7_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery7->fauna_page7_gallery7_description ?? '')) !!}</div>
                 </div>
             </div>
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery8) bg-active @endif" style="@if($fauna_page7_gallery8) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery8/' . $fauna_page7_gallery8->fauna_page7_gallery8_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery8) bg-active @endif" style="@if($fauna_page7_gallery8) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery8/' . $fauna_page7_gallery8->fauna_page7_gallery8_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery8->fauna_page7_gallery8_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery8->fauna_page7_gallery8_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery8->fauna_page7_gallery8_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery8->fauna_page7_gallery8_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery8->fauna_page7_gallery8_description )) !!}</div>
-                </div>
-            </div>
-
-
-            <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery9) bg-active @endif" style="@if($fauna_page7_gallery9) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery9/' . $fauna_page7_gallery9->fauna_page7_gallery9_image) }}'); @endif">
-                    <div class="label">
-                        <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery9->fauna_page7_gallery9_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery9->fauna_page7_gallery9_subtitle )) !!}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery9->fauna_page7_gallery9_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery8->fauna_page7_gallery8_description ?? '')) !!}</div>
                 </div>
             </div>
 
 
             <div class="option" style="background: #555536">
-                <div class="image @if($fauna_page7_gallery10) bg-active @endif" style="@if($fauna_page7_gallery10) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery10/' . $fauna_page7_gallery10->fauna_page7_gallery10_image) }}'); @endif">
+                <div class="image @if($fauna_page7_gallery9) bg-active @endif" style="@if($fauna_page7_gallery9) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery9/' . $fauna_page7_gallery9->fauna_page7_gallery9_image ?? '') }}'); @endif">
                     <div class="label">
                         <div class="info">
-                            <div class="main">{!! nl2br(e( $fauna_page7_gallery10->fauna_page7_gallery10_title )) !!}</div>
-                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery10->fauna_page7_gallery10_subtitle )) !!}</div>
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery9->fauna_page7_gallery9_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery9->fauna_page7_gallery9_subtitle ?? '')) !!}</div>
                         </div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery10->fauna_page7_gallery10_description )) !!}</div>
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery9->fauna_page7_gallery9_description ?? '')) !!}</div>
+                </div>
+            </div>
+
+
+            <div class="option" style="background: #555536">
+                <div class="image @if($fauna_page7_gallery10) bg-active @endif" style="@if($fauna_page7_gallery10) background-image: url('{{ asset('uploads/story/fauna/fauna_page7/gallery10/' . $fauna_page7_gallery10->fauna_page7_gallery10_image ?? '') }}'); @endif">
+                    <div class="label">
+                        <div class="info">
+                            <div class="main">{!! nl2br(e( $fauna_page7_gallery10->fauna_page7_gallery10_title ?? '')) !!}</div>
+                            <div class="sub">{!! nl2br(e( $fauna_page7_gallery10->fauna_page7_gallery10_subtitle ?? '')) !!}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="image-content scroll text-white">{!! nl2br(e( $fauna_page7_gallery10->fauna_page7_gallery10_description ?? '')) !!}</div>
                 </div>
             </div>
         </div>
