@@ -6,9 +6,10 @@ $userRole = auth()->user()->role_id;
 $isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_id 2 is for subadmin
 @endphp
 
-<aside id="sidebar" class="sidebar">
-    <ul class="sidebar-nav" id="sidebar-nav">
-        <li class="nav-item">
+<aside id="sidebar" class="sidebar" style="background-color: #194B46;">
+
+    <ul class="sidebar-nav" id="sidebar-nav" style="padding:20px;font-size: 15px; list-style: none; margin-left: 10% ">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'dashboard') collapsed @endif" href="{{url('panel/dashboard') }}">
                 <i class="bi bi-grid"></i>
                 <span>Dashboard</span>
@@ -16,7 +17,7 @@ $isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_
         </li><!-- End Dashboard Nav -->
 
         @if($userRole == 1) <!-- Check if the user is an admin -->
-        <li class="nav-item">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'role') collapsed @endif" href="{{url('panel/role')}}">
                 <i class="bi bi-person"></i>
                 <span>Role</span>
@@ -24,14 +25,14 @@ $isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_
         </li><!-- End RolePage Nav -->
         @endif
 
-        <li class="nav-item">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'user') collapsed @endif" href="{{url('panel/user')}}">
                 <i class="bi bi-person"></i>
                 <span>User</span>
             </a>
         </li><!-- End User Page Nav -->
 
-        <li class="nav-item">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'admin') collapsed @endif" href="{{url('panel/aduser')}}">
                 <i class="bi bi-person"></i>
                 <span>Admin</span>
@@ -39,7 +40,7 @@ $isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_
         </li><!-- End AdminPage Nav -->
 
         @if($userRole == 1) <!-- Check if the user is an admin -->
-        <li class="nav-item">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'donation') collapsed @endif" href="{{url('panel/donation')}}">
                 <i class="bi bi-person"></i>
                 <span>Donation</span>
@@ -47,14 +48,14 @@ $isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_
         </li><!-- End Donation Page Nav -->
         @endif
 
-        <li class="nav-item">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'profile') collapsed @endif" href="{{url('panel/profile')}}">
                 <i class="bi bi-person"></i>
                 <span>Profile</span>
             </a>
         </li><!-- End Profile Page Nav -->
 
-        <li class="nav-item">
+        <li class="nav-item" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
             <a class="nav-link @if(Request::segment(2) != 'logout') collapsed @endif" href="{{ url('logout')}}">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Logout</span>
@@ -62,3 +63,4 @@ $isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_
         </li><!-- End Logout Page Nav -->
     </ul>
 </aside><!-- End Sidebar-->
+

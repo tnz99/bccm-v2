@@ -25,14 +25,18 @@
                         <div class="row mb-3">
                             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" name="email" value="{{ old('email') }}" required class="form-control">
+                                <input type="email" name="email" value="{{ old('email') }}" required
+                                    class="form-control">
                                 <div style="color:red"> {{ $errors->first('email') }} </div>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                             <div class="col-sm-10">
-                                <input type="password"  name="password" required class="form-control">
+                                <input type="password" name="password" required class="form-control">
+                                @error('password')
+                                <div style="color: red;">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
@@ -40,8 +44,12 @@
                             <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
                             <div class="col-sm-10">
                                 <input type="password" name="confirmpassword" required class="form-control">
+                                @error('confirmpassword')
+                                <div style="color: red;">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
+
 
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label">Role</label>
@@ -49,9 +57,10 @@
                                 <select class="form-select" name="role_id" requird>
                                     <option value="">Select</option>
                                     @foreach($getRole as $value)
-                                    <option {{ (old('role_id') == $value->id) ? 'selected' : ''}} value="{{ $value->id }}">{{ $value->name }}</option>
+                                    <option {{ (old('role_id') == $value->id) ? 'selected' : ''}}
+                                        value="{{ $value->id }}">{{ $value->name }}</option>
                                     @endforeach
-                                    
+
                                 </select>
                             </div>
                         </div>

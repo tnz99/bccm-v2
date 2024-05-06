@@ -31,6 +31,20 @@
     <!-- Template Main CSS File -->
     <link href="{{ url('') }}/assets/css/style.css" rel="stylesheet">
 
+    <style>
+        /* Define a class to hide the menu icon by default */
+        .menu-icon {
+            display: none;
+        }
+
+        /* Define media query for smaller screen sizes where you want to show the menu icon */
+        @media screen and (max-width: 768px) {
+            .menu-icon {
+                display: block; /* Show the menu icon */
+            }
+        }
+    </style>
+
     @yield('style')
 
 </head>

@@ -53,30 +53,37 @@ class ProfileController extends Controller
     return view('panel.profile.edit', compact('user', 'getRole'))->with('success', 'Profile updated successfully');
 }
 
-    public function changePassword(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'current_password' => 'required',
-            'new_password' => 'required|min:8|different:current_password',
-            'new_password_confirmation' => 'required|same:new_password',
-        ]);
-    
-        // Validate the current password
-        $user = Auth::user();
-        if (!Hash::check($request->current_password, $user->password)) {
-            $validator->errors()->add('current_password', 'The current password is incorrect.');
-        }
-    
-        if ($validator->fails()) {
-            return back()->withErrors($validator)->withInput();
-        }
-    
-        // Update the password
-        $user->password = Hash::make($request->new_password);
-        $user->save();
-    
-        return redirect()->route('panel.profile')->with('success', 'Password changed successfully!');
+public function changePassword(Request $request)
+{
+    // Validate the request data
+    $request->validate([
+        'current_password' => 'required',
+        'new_password' => ['required', 'min:8', 'different:current_password', 'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/'],
+        'new_password_confirmation' => 'required|same:new_password',
+    ]);
+
+    // Get the authenticated user
+    $user = Auth::user();
+
+    // Check if the provided current password matches the user's actual password
+    if (!Hash::check($request->current_password, $user->password)) {
+        return redirect()->back()->withErrors(['current_password' => 'The current password is incorrect.'])->withInput();
     }
+
+    // Update the user's password
+    $user->password = Hash::make($request->new_password);
+    $user->save();
+
+    // Redirect back with success message
+    return redirect()->route('panel.profile')->with('success', 'Password changed successfully!');
+}
+
+
+
+
+
+
+
     
     
     

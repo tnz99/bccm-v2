@@ -129,7 +129,8 @@
 
                         <div class="tab-pane fade pt-3" id="profile-change-password">
                             <!-- Change Password Form -->
-                            <form action="{{ route('change.password') }}" method="post">
+                            <form action="{{ route('change.password') }}" method="post"
+                                onsubmit="return validatePassword()">
                                 @csrf
                                 <div class="row mb-3">
                                     <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current
@@ -166,6 +167,54 @@
                                 </div>
                             </form><!-- End Change Password Form -->
                         </div>
+
+                        <script>
+                        function togglePasswordVisibility(fieldId) {
+                            var field = document.getElementById(fieldId);
+                            if (field.type === "password") {
+                                field.type = "text";
+                            } else {
+                                field.type = "password";
+                            }
+                        }
+
+                        function validatePassword() {
+                            var currentPassword = document.getElementById("currentPassword").value;
+                            var newPassword = document.getElementById("newPassword").value;
+                            var renewPassword = document.getElementById("renewPassword").value;
+
+                            if (currentPassword.trim() === "") {
+                                alert("Please provide your current password.");
+                                return false; // Prevent form submission
+                            }
+
+                            if (newPassword.trim() === "") {
+                                alert("Please provide a new password.");
+                                return false; // Prevent form submission
+                            }
+
+                            if (renewPassword.trim() === "") {
+                                alert("Please re-enter your new password.");
+                                return false; // Prevent form submission
+                            }
+
+                            // Regular expression to validate password format
+                            var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+                            if (!passwordRegex.test(newPassword)) {
+                                alert("New password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character.");
+                                return false; // Prevent form submission
+                            }
+
+                            if (newPassword !== renewPassword) {
+                                alert("New password and re-entered password must match.");
+                                return false; // Prevent form submission
+                            }
+
+                            return true; // Allow form submission
+                        }
+                        </script>
+
 
                     </div><!-- End Bordered Tabs -->
 
