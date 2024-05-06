@@ -21,6 +21,9 @@ class AdUserController extends Controller
         $data['getRole']= RoleModel::getRecord();
         return view('panel.aduser.add', $data);
     }
+
+
+
     
     public function edit($id)
     {
@@ -28,6 +31,10 @@ class AdUserController extends Controller
         $data['getRole']= RoleModel::getRecord();
         return view('panel.aduser.edit', $data);
     }
+
+
+
+    
 
     public function insert(Request $request)
     {

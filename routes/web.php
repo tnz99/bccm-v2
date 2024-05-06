@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\AdUserController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProfileController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -39,6 +40,21 @@ Route::group(['middleware' => 'useradmin'], function( ) {
     Route::get('panel/aduser/delete/{id}', [AdUserController::class, 'delete'] );
 
 
+    
+    Route::get('panel/profile', [ProfileController::class, 'show'])->name('panel.profile');
+
+    Route::post('/panel/profile/edit-profile', [ProfileController::class, 'editProfile'])->name('profile.edit');
+    Route::post('/change-password', [App\Http\Controllers\ProfileController::class, 'changePassword'])->name('change.password');
+
+
+    
+
+   
+
+
+
+
+
 });
 
 
@@ -56,3 +72,11 @@ Route::group(['middleware' => 'useradmin'], function( ) {
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

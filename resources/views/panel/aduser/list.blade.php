@@ -2,6 +2,13 @@
 
 @section('content')
 
+
+@php
+use App\Models\PermissionRoleModel;
+$userRole = auth()->user()->role_id;
+$isRole = in_array($userRole, [1]); // Assuming role_id 1 is for admin and role_id 2 is for subadmin
+@endphp
+
 <div class="pagetitle d-flex align-items-center justify-content-between">
     <h1 class="mb-0">Admin</h1>
 
@@ -16,28 +23,23 @@
         </form>
     </div>
 
+    @if($isRole) <!-- Check if the user is an admin -->
     <div>
         <a href="{{ url('panel/aduser/add') }}" class="btn btn-primary">
             <i class="bi bi-person-plus"></i> Add Admin
         </a>
     </div>
+    @endif
 
 </div>
 
-
-
 <section class="section">
     <div class="row">
-
-
         <div class="col-lg-12">
             @include('_message')
 
             <div class="card">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Role List</h5> -->
-
-                    <!-- Table with stripped rows -->
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -45,7 +47,10 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Role</th>
+                                @if($userRole == 1)
+                                <!-- Check if the user is an admin -->
                                 <th scope="col">Action</th>
+                                @endif
                             </tr>
                         </thead>
                         <tbody>
@@ -55,31 +60,26 @@
                                 <td>{{ $value->name }}</td>
                                 <td>{{ $value->email }}</td>
                                 <td>{{ $value->role_name }}</td>
+                                @if($isRole)
                                 <td>
-                                    <a href="{{ url('panel/aduser/edit/' .$value->id) }}" class="btn btn-primary btn-sm">
-                                        Edit </a>
-                                    <a href="{{ url('panel/aduser/delete/' .$value->id) }}" class="btn btn-danger btn-sm">
-                                        Delete </a>
+                                    <a href="{{ url('panel/aduser/edit/' .$value->id) }}"
+                                        class="btn btn-primary btn-sm">
+                                        Edit
+                                    </a>
+                                    <a href="{{ url('panel/aduser/delete/' .$value->id) }}"
+                                        class="btn btn-danger btn-sm">
+                                        Delete
+                                    </a>
                                 </td>
+                                @endif
                             </tr>
                             @endforeach
-
-
                         </tbody>
                     </table>
-                    <!-- End Table with stripped rows -->
-
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
 </section>
-
-
-
 
 @endsection

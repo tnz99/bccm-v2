@@ -16,15 +16,24 @@ class AdminUserMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     { 
-        if(!empty(Auth::check()) )
+        // Check if the user is authenticated
+        if(Auth::check())
         {
-            return $next($request);
-        }
-        else
-        {
-            Auth::logout();
-            return redirect(url(''));
+            // Get the user's role id
+            $roleId = Auth::user()->role_id;
+            
+            // Check if the role id is for admin (1) or subadmin (2)
+            if ($roleId == 1 || $roleId == 2) {
+                // Allow the request to proceed
+                return $next($request);
+            } else {
+                // Redirect the user to the '/home' route with a flash message
+                return redirect('/home')->with('status', 'You are not allowed to access the Admin Dashboard');
+            }
         }
         
+        // If the user is not authenticated, log them out and redirect to the homepage
+        Auth::logout();
+        return redirect(url(''));
     }
 }

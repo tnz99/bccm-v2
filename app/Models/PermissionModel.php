@@ -15,7 +15,7 @@ class PermissionModel extends Model
 
     static public function getSingle($id)
     {
-        return RoleModel::find($id);
+        return PermissionModel::find($id);
     }
 
     static public function getRecord()
@@ -46,4 +46,5 @@ class PermissionModel extends Model
     {
         return PermissionModel::where('groupby', '=', $groupby)->get();
     }
+    
 }

@@ -31,15 +31,7 @@ class AuthController extends Controller
         }
     }
 
-    public function forgot()
-    {
-        return view('auth.forgot');
-    }
-
-    public function forgot_post(Request $request)
-    {
-        dd($request-all());
-    }
+  
     public function logout()
     {
         Auth::logout();
