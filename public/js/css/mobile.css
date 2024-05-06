@@ -1,0 +1,365 @@
+@media screen and (min-width: 1920px) {
+    .story-section.gallery-wrapper {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .circular-nav, #our_story_btn {
+        display: none;
+    }
+    
+    .open-btn {
+        display: block;
+        position: fixed;
+
+        bottom: 0;
+        right: 0;
+
+        margin-bottom: 50px;
+        margin-right: 40px;
+    }
+    
+    .next-story-text {
+        font-size: 14px;
+    }
+
+    .circle-xm {
+        width: 40px;
+        height: 40px;
+    }
+
+    .next-story-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    body .options .active {
+        min-width: 315px;
+    }
+
+    /* .gallery-container {
+        overflow-x: auto;
+        width: 50%;
+        max-height: 50%;
+        margin-top: 100px;
+    } */
+
+    /* h1.text-white {
+        margin-left: 50px;
+    } */
+}
+
+@media (max-width: 1100px) {
+    /* Header Component */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .footer {
+        padding: 0 50px;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-right: 50px;
+    }
+
+    .header-nav-list li .custom-audio {
+        display: none;
+    }
+
+    .logo {
+        /* margin-left: 15px; */
+        margin: unset;
+        padding-left: 50px;
+    }
+
+    .svg-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-text {
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    .menu-icon-svg {
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-nav-list {
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 50px;
+        padding-left: 20px;
+        z-index: 2;
+        background: #a8aa4a;
+        animation: 1s grow ease forwards;
+    }
+
+    @keyframes grow {
+        100% {
+          width: 200px;
+          height: 100%;
+       }
+    }
+
+    /* Home */
+    .home-wrapper {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .home-main-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-nav-list li {
+        margin-bottom: 30px;
+    }
+
+    .nav-list-link {
+        color: black;
+    }
+
+    .home-header-subtext {
+        font-size: 35px;
+    }
+
+    /* register button */
+    .register-btn {
+        margin-top: 20px;
+        /* width: 50%; */
+    }
+
+    .register-text {
+        font-weight: 600;
+    }
+
+    .register-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Story Pages */
+    .story-control-wrapper {
+        position: static;
+        width: unset;
+        margin: unset;
+        flex-wrap: wrap;
+    }
+
+    .story-control-wrapper ul, .story-control-wrapper a {
+        margin-top: 10px;
+    }
+
+    .story-control {
+        padding: unset;
+        margin: unset;
+    }
+
+    .story-section {
+        margin-top: 80px;
+        margin-top: 10vh;
+        padding: 0 50px;
+    }
+
+    .story-header {
+        margin-left: unset;
+        width: unset;
+        min-width: unset;
+    }
+
+    .story-header-text {
+        font-size: 50px;
+        padding-bottom: 0;
+        line-height: normal;
+    }
+
+    .story-header-description {
+        font-size: 16px;
+    }
+
+    .next-story-text {
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        font-size: 14px;
+        color: white;
+        opacity: 1;
+        text-transform: capitalize;
+    }
+    .next-story-btn, .circle-xm {
+        width: 35px;
+        height: 35px;
+    }
+    .next-story-icon {
+        height:15px;
+        width:15px;
+    }
+    .circle-xm {
+        font-weight: 500;
+    }
+
+    /* Registration Page */
+    .register-form-wrapper .form-group{
+        text-align: center;
+    }
+  
+    .register-form-container {
+        padding-left: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-form-container h4 {
+        text-align: center !important;
+    }
+
+    .register-form {
+        align-items: center !important;
+    }
+
+    /* Prayer Wheel */
+    .prayer-wheel {
+        display: none;
+    }
+
+    /* Years story */
+    .year-story-wrapper {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .year-story-header {
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+    .year-story-header  > div > p {
+        width: 25ch;
+    }
+
+    .year-story-header-year {
+        font-size: 60px;
+        margin-left: -25px;
+    }
+
+    .year-story-header-subtext {
+        width: 450px;
+        font-size: 20px;
+        margin-left: -19px;
+    }
+
+    .year-story-content {
+        width: 80%;
+        margin-left: 30px;
+        margin-right: 40px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .year-nav-list {
+        margin-left: 50px;
+        margin-top: 6px;
+        display: flex;
+        list-style: none;
+        overflow-x: scroll;
+        padding-bottom: 6px;
+    }
+    /* end */
+
+    .story-header-content {
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+    .registration-input {
+        /* width: 130%; */
+        align-items: center;
+    }
+
+    .story-header-description {
+        max-width: 100%;
+    }
+
+    .form-check .form-check-input {
+        float: none;
+        margin-left: 0;
+    }
+
+    .form-group, .form-check {
+        width: 80vw;
+    }
+
+    .gallery-container {
+        overflow-x: scroll;
+        /* width: 110%;
+        height:46%;
+        margin-top: -10px; */
+    }
+    .option{
+        margin-top:20px;
+    
+    }
+    
+    h1.text-white, h1.text-black, h1.text-white span.text-uppercase, h1.text-black span.text-uppercase {
+        font-size: 30px;
+    }
+
+    /* h1.text-white, h1.text-black {
+        margin-left: 20px;
+        margin-top: 10px;
+    } */
+
+    .circle-xm:hover, .next-story-btn:hover {
+        background-color: white;
+        border: 2px solid yellow;
+        color: yellow;
+
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .open-btn {
+        width: 75px;
+        height: 75px;
+        font-size: 12px;
+    }
+}
+
+
+/* contact */
+/* Media query for mobile devices */
+@media only screen and (max-width: 430px) {
+    .fb-div {
+        width: 60px;
+        height: 60px;
+        position:relative;
+        bottom: -100px;
+        left: 50px;
+    }
+
+    .fb,
+    .ig,
+    .email {
+        width: 40px;
+        height: 40px;
+        
+    }
+}
+

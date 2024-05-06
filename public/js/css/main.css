@@ -1,0 +1,955 @@
+* { font-size: 16px; }
+
+html{
+    overflow: hidden !important;
+}
+
+body {
+    font-family: Inter;
+    position: relative;
+    /* overflow:hidden; */
+    height: 100vh;
+    width: 100vw;
+}
+
+ol, ul { padding: 0; }
+
+::placeholder {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2.18rem;
+}
+
+.register-success-wrapper {
+    margin-top: 50px;
+}
+
+.register-success-text {
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.register-success-subtext {
+    color: rgba(0, 0, 0, 0.50);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button { border: 0; }
+
+/* List Style Type */
+.list-none	{ list-style-type: none; }
+.list-disc	{ list-style-type: disc; }
+.list-decimal { list-style-type: decimal; }
+
+/* Text Decoration */
+.no-underline { text-decoration-line: none; }
+
+/* Font Size */
+.fs-12 { font-size: 12px;}
+.fs-14 { font-size: 1rem; }
+.fs-20 { font-size: 1.25rem; }
+.fs-24 { font-size: 1.5rem; }
+.fs-30 { font-size: 1.875rem; }
+.fs-36 { font-size: 36px; }
+.fs-50 { font-size: 50px; }
+.fs-85 { font-size: 85px; }
+.fs-96 { font-size: 6rem; }
+
+.font-normal { font-style: normal; }
+
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+
+.lh-normal { line-height: normal; }
+
+.p-0 { padding: 0%; }
+.pt-10 { padding-top: 1.25rem; }
+.pt-5 { padding-top: 5rem; }
+.pb-10 { padding-bottom: 1.25rem; }
+
+.m-0 { margin: 0; }
+
+/* Margin Top */
+.mt-14 { margin-top: 0.875rem; }
+.mt-22 { margin-top: 1.375rem; }
+.mt-46 { margin-top: 1.8125rem; }
+.mt-50 { margin-top: 1.9375rem; }
+.mt-80 { margin-top: 3.125rem; }
+.mt-145 { margin-top: 9.0625rem; }
+.mt-148 { margin-top: 9.25rem; }
+.mt-197 { margin-top: 12.25rem; }
+.mt-198 { margin-top: 12.375rem; }
+.mt-280 { margin-top: 17.5rem; }
+.mt-315 { margin-top: 19.75rem; }
+
+.mt-n10 { margin-top: -0.625rem;}
+ 
+.mr-10 { margin-right: 0.625rem; }
+.mr-50 { margin-right: 50px; }
+.mr-57 { margin-right: 3.125px; }
+.mr-60 { margin-right: 60px; }
+.mr-99 { margin-right: 6.25rem; }
+.mr-60 { margin-right: 5rem;}
+
+.mb-23 { margin-bottom: 23px; }
+
+.ml-9 { margin-left: 0.5625rem; }
+.ml-35 { margin-left: 2.1875rem; }
+.ml-139 { margin-left: 8.6875rem; }
+.ml-146 { margin-left: 9.125rem; }
+.ml-149 { margin-left: 9.3125rem; }
+.ml-150 { margin-left: 9.375rem; }
+.ml-50p { margin-left: 15%; }
+
+.w-320 { width: 20rem; }
+.w-495 { width: 30.9375rem; }
+.w-513 { width: 32.0625rem; }
+.w-50 { width: 50%; }
+
+.vw-65 { width: 6vw; }
+.vw-75 { width: 75vw; }
+.vw-98 { width: 50vw; }
+.vh-100 { height: 100vh; }
+
+.h-50 { height: 50px; }
+.h-73 { height: 37px; }
+
+.radius-50 { border-radius: 50%; }
+
+.bg-gray-20 { background: (255, 255, 255, 0.20); }
+.bg-yellow { background: #FCFF5C; }
+
+.text-green { color: #19D67B; }
+.text-yellow { color: #FCFF5C; } 
+.text-black { color: black; }
+
+/* .register-background { background: url('../images/backgrounds/image_1.png'), lightgray 50% / cover no-repeat; } */
+.register-background {
+    background: lightgray url('../images/backgrounds/image_1.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-kingdom {
+    background: lightgray url('../images/backgrounds/the_kingdom.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-kingdom2 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/the_kingdom.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-laws-1  {
+    background: lightgray url('../images/backgrounds/image_5.png') center/cover no-repeat;
+    height: 100vh;
+}
+.contact {
+    background: lightgray url('../images/backgrounds/about.png') center/cover no-repeat;
+    height: 100vh;
+}
+
+.the-flora {
+    /* backdrop-filter: blur(10px); */
+    background: lightgray url('../images/backgrounds/the_flora.png') center/cover no-repeat;
+    height: 100vh;
+}
+
+.the-flora2 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/the_flora.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-flora3 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/the_flora.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-flora4 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/the_flora.png') center/cover no-repeat;
+    height: 100vh;
+}
+
+.the-flora5 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/the_flora.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-birds {
+    background: lightgray url('../images/backgrounds/winter.png') center/cover no-repeat;
+    height: 100vh;
+}
+
+.the-fauna {
+    background: lightgray url('../images/backgrounds/the_fauna.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-butterfly2 {   
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/the_fauna.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-mammals {
+    background: lightgray url('../images/backgrounds/mam1.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-mammals2 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/mam1.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-birds2 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/winter.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-change2 {
+    backdrop-filter: blur(10px);
+    background: lightgray url('../images/backgrounds/change.jpeg') center/cover no-repeat;
+    height: 100vh;
+}
+.the-climate {
+    background: lightgray url('../images/backgrounds/home.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-summer {
+    background: lightgray url('../images/backgrounds/summer.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-winter {
+    background: lightgray url('../images/backgrounds/winter.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-spring {
+    background: lightgray url('../images/backgrounds/spring.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-autumn {
+    background: lightgray url('../images/backgrounds/autumn.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-change {
+    background: lightgray url('../images/backgrounds/change.jpeg') center/cover no-repeat;
+    height: 100vh;
+}
+.the-laws {
+    background: lightgray url('../images/backgrounds/the_law.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-people {
+    background: lightgray url('../images/backgrounds/the_people.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-people2{  
+    backdrop-filter: blur(10px); 
+    background: lightgray url('../images/backgrounds/the_people.png') center/cover no-repeat;
+    height: 100vh;
+}
+.the-newsE{  
+    backdrop-filter: blur(10px); 
+    background: lightgray url('../images/backgrounds/about.png') center/cover no-repeat;
+    height: 100vh;
+}
+.about{  
+    backdrop-filter: blur(6px); 
+    background: lightgray url('../images/backgrounds/about.png') center/cover no-repeat;
+    height: 100vh;
+}
+.home {
+    backdrop-filter: blur(50%);
+    background: lightgray url('../images/backgrounds/home1.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.the-law-cnav-bg { background: linear-gradient(270deg, #7C745C 42.11%, rgba(255, 234, 172, 0.55) 101.31%);}
+.the-kingdom-cnav-bg { background: linear-gradient(270deg, #555050 42.11%, rgba(159, 159, 159, 0.00) 101.31%);}
+.the-climate-cnav-bg { background: linear-gradient(270deg, #151A21 42.11%, rgba(23, 28, 36, 0.06) 101.31%); }
+.the-flora-cnav-bg {background: linear-gradient(270deg, #1347AF 42.11%, rgba(238, 242, 245, 0.27) 101.31%);}
+.the-people-cnav-bg { background: linear-gradient(270deg, #346D6C 42.11%, rgba(135, 176, 175, 0.47) 101.31%); }
+.the-fauna-cnav-bg { background: linear-gradient(270deg, #4B5E25 42.11%, rgba(174, 177, 127, 0.50) 101.31%); }
+.the-spring-cnav-bg { background: linear-gradient(270deg, #DA8495 42.11%, rgba(216, 161, 164, 0.56) 101.31%); }
+.the-change-cnav-bg { background: linear-gradient(270deg, #400C00 42.11%,  rgba(216, 161, 164, 0.56) 101.31%);}
+.the-fauna2-cnav-bg { background: linear-gradient(270deg, #eab676 42.11%,  rgba(216, 161, 164, 0.56) 101.31%);}
+.the-summer-cnav-bg {background: linear-gradient(270deg, #C38F33 42.11%, rgba(255, 226, 173, 0.47) 101.31%);}
+.the-winter-cnav-bg {background: linear-gradient(270deg, #262432 42.11%, rgba(83, 80, 99, 0.29) 101.31%);}
+.the-autumn-cnav-bg {background: linear-gradient(270deg, #47A2DE 42.11%, rgba(188, 219, 240, 0.40) 101.31%);}
+
+.home-cnav-bg { background: linear-gradient(270deg, #151A21 42.11%, rgba(23, 28, 36, 0.06) 101.31%); }
+.register-cnav-bg { background: linear-gradient(270deg, #151A21 42.11%, rgba(23, 28, 36, 0.06) 101.31%); }
+.the-spring-cnav-bg { background: linear-gradient(270deg, #DA8495 42.11%, rgba(216, 161, 164, 0.56) 101.31%); }
+.the-law1-cnav-bg { background: linear-gradient(270deg, #585858 42.11%, rgba(193, 195, 194, 0.71) 101.31%); } 
+
+/* Circular nave inner circle border */
+
+.border-gray { border: 1px solid gray; }
+.border-white { border: 1px solid white; }
+.our-story-btn {
+    width: 125px;
+    height: 125px;
+    background-color: #FCFF5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px;
+    left: 85%;
+    top: 45%;
+
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.circle-xm, .next-story-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #fdff7aa2;
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+}
+.language-btn {
+    width: 94px;
+    height: 39px;
+    flex-shrink: 0;
+
+    border-radius: 0.625rem;
+    border: 0.3px solid #FFF;
+    background: rgba(255, 255, 255, 0.20);
+}
+.hidden { display: none; }
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.zoom-in-element { animation: zoomIn 0.5s ease; }
+.snowfall {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    animation: snowfall 5s linear infinite;
+}
+.snow{
+    z-index: -1;
+}
+.snow,.snow:after,.snow::before {
+    content: '';
+    position: absolute;
+    top: -650px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(4px 4px at 100px 50px,#fff,transparent),
+                        radial-gradient(6px 6px at 200px 150px, #fff,transparent),
+                        radial-gradient(3px 3px at 300px 250px,#fff,transparent),
+                        radial-gradient(4px 4px at 400px 350px,#fff,transparent),
+                        radial-gradient(6px 6px at 500px 100px,#fff,transparent),
+                        radial-gradient(3px 3px at 50px 200px,#fff,transparent),
+                        radial-gradient(4px 4px at 150px 300px,#fff,transparent),
+                        radial-gradient(6px 6px at 250px 400px,#fff,transparent),
+                        radial-gradient(3px 3px at 350px 500px,#fff,transparent),
+                        radial-gradient(4px 4px at 550px 550px,#fff,transparent);
+    background-size: 650px 650px;
+    animation: SnowAnim 3s linear infinite;
+}
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 6s;
+}
+.snow::before {
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+@keyframes SnowAnim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(650px);
+    }
+}
+
+/* Snowfall End*/
+.wrapper { position: relative; }
+.only-border{
+    border: 2px solid #FCFF5C;
+    border-radius: 50px;
+}
+.circle-fill{
+    background-color: transparent;
+    color: white;
+}
+
+/* CSS code to center the image gallery */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh; /* Adjust the minimum height as needed */
+}
+.prayer-wheel-position {
+    position: fixed;
+    right: -550px;
+    bottom: -170px;
+    z-index: -1000;
+    height: 130%;
+}
+
+
+/* year story */
+.year-story-wrapper {
+    margin-top: 145px;
+    align-items: flex-start;
+}
+
+.year-story-header {
+    margin-left: 150px;
+    width: 25%;
+}
+
+.year-story-header-year {
+    font-size: 50px;
+   
+    
+
+}
+
+.year-story-header-subtext {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.year-story-content {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+    width: 25%;
+    height:20%;
+    padding-left: 9px;
+}
+
+.story-header-content {
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.year-nav-list {
+    margin-top: 150px;
+    margin-left: 150px;
+    display: flex;
+    list-style: none;
+    width:50%;
+    overflow-x: scroll;
+    padding-bottom: 6px;
+   
+}
+
+.year-nav-list-item {
+    margin-right: 50px;
+}
+
+.year-nav-link {
+    font-size: 16px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: none;
+    color: black;
+}
+
+/* Story Control */
+.story-control-wrapper {
+    width: 34%;
+    justify-content: space-between;
+}
+
+.next-story-text {
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+.story-control {
+    margin-top: 10px;
+}
+
+.next-story-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.yearly-story-control-wrapper {
+    margin-left: 50px;
+}
+
+/* Home Page */
+.home-header-text {
+    color: black;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.home-header-subtext {
+    color: black;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.register-btn {
+    margin-top: 50px;
+    height: 50px;
+}
+
+.register-text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.register-icon {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.register-btn {
+    width: 250px;
+    background: yellow;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+/* Main Header */
+.header {
+    padding-top: 50px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.logo {
+    padding-left: 150px;
+}
+
+.logo-text-wrapper {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.logo-text {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.header-nav-list {
+    display: flex;
+    list-style: none;
+    padding-left: 150px;
+    margin: unset;
+}
+
+.nav-list-link {
+    margin-right: 40px;
+    line-height: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px;
+    /* font-weight: 500; */
+}
+
+.nav-list-link:hover {
+    font-weight: 900;
+    background: rgba(255, 255, 0, 0.6);
+  
+}
+
+.nav-item {
+    padding: 6px;
+   
+   
+}
+
+.nav-item:hover {
+    border-radius: 0px 15px 15px 0px;
+    background: linear-gradient(270deg, #947f7f 0%, rgba(255, 255, 255, 0.00) 74.59%);
+   
+ 
+
+}
+
+
+
+
+.cnav-link:hover {
+    color: yellow;  
+     
+}
+
+.cnav-icon {
+    display: none;
+    margin-left: 10px;
+}
+
+/* Story Page */
+.story-section {
+    margin-top: 140px;
+    padding: 0 150px;
+    height: 100vh;
+}
+
+.footer {
+    padding: 0 150px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-bottom: 8vh;
+}
+
+.story-header-text {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    /* bottom: -50px; */
+}
+
+.story-header-description {
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 60vh;
+    line-height: normal;
+    font-style: normal;
+    position: relative;
+    /* bottom: -50px; */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Add a subtle text shadow for better visibility */
+    text-align: justify; 
+}
+
+/* Registration Page */
+.register-form {
+    margin-top: 30px;
+}
+
+.registration-input {
+    background: rgba(255, 255, 255, 0.80);
+    font-size: 20;
+    border: none;
+    border-radius: 0%;
+    text-align: left;
+}
+
+.register-form-wrapper {
+    margin-top: 12vh;
+    height: 100vh;
+}
+
+.check-label-text {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5px;
+    margin-left: 10px;
+
+}
+
+.terms-condition {
+    color: #FCFF5C;
+}
+
+.form-check-input-box {
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+}
+
+/* Story Nav */
+.open-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: #FCFF5C;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px;
+
+    display: none;
+}
+
+.svg-logo {
+    width: 80px;
+    height: 45px;
+}
+
+/* Full Page Story Navigation */
+.story-nav {
+    
+    position: fixed;
+    top:100px;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100vw;
+    backdrop-filter: blur(3px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.story-nav-list > li {
+    margin-bottom: 10px;
+    background-color: yellow;
+    border-radius: 7px;
+    padding: 7px;
+    width: 300px;
+    text-align: center;
+}
+
+.story-nav-list > li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    padding: 10px;
+}
+
+/* Image gallery css */
+/* Image styling */
+/* .image {
+    width: 100%;
+    height: 50%;
+    border-radius: 1%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+
+/* Overlay styling
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+} */
+
+/* Show overlay on hover */
+/* .options .option:hover .image .overlay  {
+    opacity: 1;
+} */
+.option{
+    overflow: hidden;
+}
+/* Description styling */
+/* Show description on hover */
+/* .options .option:hover .description {
+    display: block;
+} */
+
+.image-content{
+    text-align: justify;
+    /* margin-left: 139px; */
+    /* width: 90%; */
+    /* min-width: 36vh;  */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-style: normal;
+    /* position: relative; */
+    /* bottom: 10px; */
+    /* left: -130px; */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    height: 50%;
+    /* overflow-y: auto; */
+    padding: 10px;
+    /* max-height: 50vh; */
+    /* box-sizing: border-box; */
+    /* color: black; */
+}
+
+/* image content for rhododendron */
+/* .image-content-1{
+    text-align: justify;
+    margin-left: 139px;
+    width: 70%;
+    min-width: 36vh; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-style: normal;
+    position: relative;
+    bottom: 5px;
+    left: -130px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    height: 40%;
+} */
+
+/* h3{
+    font-size: 14px;
+
+} */
+
+.scroll{
+    overflow-y: scroll;
+    max-height: 70vh;
+    scrollbar-color: #888 #f1f1f1;
+    /* padding:5px; */
+    /* border-radius: 10px; */
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* word-wrap: break-word;  */
+}
+.scroll::-webkit-scrollbar {
+    width: 6px;  /* Set the width of the scrollbar */
+    height: 50%;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #888;  /* Set the color of the scrollbar thumb */
+    border-radius: 6px;      /* Add rounded corners to the scrollbar thumb */
+  
+}
+
+.scroll::-webkit-scrollbar-track {
+    background-color: #f1f1f1;  /* Set the color of the scrollbar track */
+}
+
+
+
+.ac {
+    background-color: yellow;
+}
+
+.containerfb {
+    display: flex;
+    justify-content: space-around; 
+    /* position: relative;
+    bottom: 50%;
+    right: 10% */
+    padding-left: 80px;
+}
+
+
+.fb-div {
+    border-radius: 20px;
+    background: #FCFF5C;
+    width: 100px;
+    height: 100px;
+    /* position: relative;
+    bottom: 50%;
+    left: 50%; */
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;  
+   
+    margin-right: 25px;
+}
+
+.fb{
+    background: url(../images/backgrounds/fb.png), cover no-repeat;
+    width: 50px;
+    height: 50px;   
+}
+
+.fb-div:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.ig{
+    background: url(../images/backgrounds/ig.png), cover no-repeat;
+    width: 50px;
+    height: 50px;
+  
+    
+}
+.email{
+    background: url(../images/backgrounds/email.png), cover no-repeat;
+    width: 50px;
+    height: 50px;   
+    
+}
+
+.point-right {
+    transform: rotate(90deg)
+}
+
+.form-group, .form-check {
+    margin-bottom: 20px;
+    width: 25vw;
+}
