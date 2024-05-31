@@ -33,10 +33,14 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 # Change Apache's default port to 8000
 RUN sed -i 's/80/8000/g' /etc/apache2/ports.conf /etc/apache2/sites-available/*.conf
 
+<<<<<<< HEAD
 # Install Node.js dependencies and Vite
 RUN npm install && npm install vite
 
 # Install PHP dependencies with Composer
+=======
+# Expose port 8000 to the outside world.
+>>>>>>> 2f6ca01c367b41efb23e435b0bbba09a066845df
 RUN composer install
 
 # Expose ports 8000 and 8001 to the outside world
