@@ -16,7 +16,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
-    <body class="login-container h-full" style="background-image: url('/assets/img/bg-login.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <body class="login-container h-full" style="background-image: url('/assets/img/bg-login.png'); background-repeat: no-repeat; background-size: fit; background-position: center;">
         <x-main-nav></x-main-nav>
         <div class="p-2 sm:ml-32 sm:p-4">
             <div class="flex flex-col w-full sm:w-1/3">

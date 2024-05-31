@@ -3,7 +3,7 @@ FROM php:8.2-apache
 # Set the working directory in the container
 WORKDIR /var/www/html
 
-# Install PHP extensions and dependencies
+# Install PHP extensions and dependencies, and Node.js with npm
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -12,15 +12,12 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
-    && docker-php-ext-install pdo pdo_mysql gd
-
-
-RUN apt-get -y install nodejs
-RUN apt-get -y install npm
-RUN apt-get install -y default-mysql-client \
+    default-mysql-client \
+    nodejs \
+    npm \
+    && docker-php-ext-install pdo pdo_mysql gd \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -y vite
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
@@ -36,10 +33,13 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 # Change Apache's default port to 8000
 RUN sed -i 's/80/8000/g' /etc/apache2/ports.conf /etc/apache2/sites-available/*.conf
 
-# Expose port 8000 to the outside world
+# Install Node.js dependencies and Vite
+RUN npm install && npm install vite
 
+# Install PHP dependencies with Composer
 RUN composer install
 
+# Expose ports 8000 and 8001 to the outside world
 EXPOSE 8000
 EXPOSE 8001
 

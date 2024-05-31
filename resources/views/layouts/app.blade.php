@@ -8,8 +8,11 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect"  href="https://fonts.b-cdn.net">
+          
+        <link rel="stylesheet" href="https://fonts.b-cdn.net/css?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -27,12 +30,14 @@
                         {{ $header }}
                     </div>
                 </header>
+                
             @endif
 
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
+           
         </div>
     </body>
 </html>

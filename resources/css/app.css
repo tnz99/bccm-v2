@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.login-container {
-    background-image: url('resources\img\bg-login.png');
-}
